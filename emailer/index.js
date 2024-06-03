@@ -94,7 +94,7 @@ app.post('/send-email', (req, res) => {
       return;
     } else {
       // Send confirmation email to the site owner
-      sendMail(process.env.MAIL_TO, mail_subject, message, (error, info) => {
+      sendMail(process.env.MAIL_TO, mail_subject, `Inquiry from ${name} |${mail_to}| - ${message}`, (error, info) => {
         if (error) {
           console.log("Error: sendMail(process.env.MAIL_TO", error);
           return res.status(500).json({
