@@ -25,3 +25,7 @@ The **Express EJS Email Sender** microservice is included in this repository. It
 ## Getting Started
 
 To deploy any of the microservices included in this repository, refer to the respective README file in each microservice's directory for detailed instructions on deployment, configuration, and usage.
+
+## License
+
+This repository is licensed under the [MIT License](https://opensource.org/licenses/MIT).
