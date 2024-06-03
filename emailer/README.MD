@@ -3,7 +3,7 @@
 This project is an Express application that uses EJS templates to send emails with Nodemailer. The application supports CORS, rate limiting, and reads configuration from environment variables.
 
 ## Features
-
+- **INQUIRY FORM SUBMIT**: This code is intended to be alternative of php email file found in most html templates i.e( contact-form.php ), the users can submit their forms directly to this server and get emails.
 - **Express**: A web framework for Node.js, designed for building web applications and APIs.
 - **EJS**: Embedded JavaScript templating for rendering HTML with dynamic content.
 - **Nodemailer**: A module for Node.js applications to send emails.
