@@ -1,0 +1,9 @@
+services:
+  email-service:
+    env_file: .env
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - .:/usr/src/app
+    restart: unless-stopped
