@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget Alert</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .alert-heading {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .list-group-item {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="alert alert-warning" role="alert">
+      <h1 class="alert-heading">Budget Alert: <%= budgetDisplayName %></h1>
+      <p>Your budget alert for <strong><%= budgetDisplayName %></strong> has been triggered.</p>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Cost Amount:</strong> $<%= costAmount %></li>
+        <li class="list-group-item"><strong>Budget Amount:</strong> $<%= budgetAmount %></li>
+        <li class="list-group-item"><strong>Alert Threshold Exceeded:</strong> <%= alertThresholdExceeded %> %</li>
+        <li class="list-group-item"><strong>Cost Interval Start:</strong> <%= costIntervalStart %></li>
+        <li class="list-group-item"><strong>Budget Amount Type:</strong> <%= budgetAmountType %></li>
+        <li class="list-group-item"><strong>Forecast Threshold Exceeded:</strong> <%= forecastThresholdExceeded %> %</li>
+        <li class="list-group-item"><strong>Currency Code:</strong> <%= currencyCode %></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
